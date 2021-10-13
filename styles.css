@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to bottom, #5d9e8f 0%, #497be8 100%);
+  height: 100vh;
+  width: 100%;
+}
+.wrapper {
+  margin: 120px auto;
+  background-color: white;
+  justify-content: center;
+  max-width: 400px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: salmon;
+}
+.wrapper h2 {
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.wrapper .addTodo {
+  overflow-y: auto;
+}
+.wrapper .addTodo input {
+  padding: 6px;
+  width: 80%;
+  border-radius: 3px;
+  border-color: blueviolet;
+}
+.addTodo button {
+  background-color: blueviolet;
+  color: white;
+  width: 40px;
+  height: 30px;
+  opacity: 0.6;
+  outline: none;
+}
+.listTodo ul {
+  position: relative;
+}
+.listTodo li {
+  margin-top: 15px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  width: 90%;
+  list-style: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+.listTodo ul li:hover span {
+  position: absolute;
+  right: 40px;
+  cursor: pointer;
+  opacity: 1;
+}
+.listTodo ul li span {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  color: rebeccapurple;
+}
+.pending {
+  display: flex;
+  font-family: sans-serif;
+  margin-top: 15px;
+}
+
+.pending p {
+  margin-right: 17%;
+}
+
+.addTodo .active {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.pending button {
+  padding: 5px 10px;
+  background-color: rebeccapurple;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.clearAll {
+  opacity: 0.6;
+}
